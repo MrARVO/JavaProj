@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Cross-section</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <link rel="stylesheet" type="text/css" href="src/styles/tfcv_main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="src/styles/tfcv_settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="src/styles/tfcv_dataList.css" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="src/katex/katex.min.css">
+	<script src="src/katex/katex.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="header-dataList-btn" class="header-btn header-left">List</div>
+		<div id="header-content-container" class="header-center">
+			<span id="header-katex-func">func</span>
+			<span id="header-katex-info">info</span>
+		</div>
+		<div class="header-btn header-q" onclick="
+			alert('EDU HSE CSF BSE175 Solonichenko A. 2020\nVisualization of surfaces and cross-sections\n\nPick the function on the List, then click the cross-section check, move the slider to move cross-section, pick another axis in the Settings, remove the plane with the check.\nHave fun!');
+		">?</div>
+		<div id="header-settings-btn" class="header-btn header-right">Settings</div>
+	</header>
+	<main>
+		<div id="render"></div>
+		<div id="dataList-panel" class="panel panel-left">
+			<ul id="dataList"></ul>
+		</div>
+		<div class="panel panel-right">
+			<div id="settings-panel" class="settings-panel settings-container">
+				<div id="settings-checkboxes" class="settings-container">
+					<input id="crossSection-check" class="settings-checkbox" type="checkbox">
+					<label for="crossSection-check">cross-section</label>
+				</div>
+				<div id="settings-crossSection" class="settings-container">
+					<div id="radio-crossSection" class="settings-container radio-container">
+						<input id="crossSection-radio-x" class="settings-radio" type="radio" name="crossSection-radio-axis" value="x" onclick="crossSectionRadioAxisChanged(this)">
+						<label for="crossSection-radio-x">x</label>
+						<input id="crossSection-radio-y" class="settings-radio" type="radio" name="crossSection-radio-axis" value="y"  onclick="crossSectionRadioAxisChanged(this)">
+						<label for="crossSection-radio-y">y</label>
+						<input id="crossSection-radio-z" class="settings-radio" type="radio" name="crossSection-radio-axis" value="z"  onclick="crossSectionRadioAxisChanged(this)" checked>
+						<label for="crossSection-radio-z">z</label>
+					</div>
+					<div class="settings-container">
+						<input id="crossSection-check-level" class="settings-checkbox" type="checkbox">
+						<label for="crossSection-check-level">level</label>
+					</div>
+				</div>
+			</div>
+			<div id="slider-crossSection-container" class="settings-panel-slider-container">
+				<div>
+		  			<input type="range" id="slider-crossSection" class="settings-panel-slider" min="1" max="200" value="1">
+		  		</div>
+			</div>
+		</div>
+		
+	</main>
+	
+	<script type="text/javascript" src="src/js/tfcv_dataList.js"></script>
+	<script type="text/javascript" src="src/js/tfcv_ui.js"></script>
+	<script type="text/javascript" src="src/js/grafar.js"></script>
+	<script type="text/javascript" src="src/js/CrossSection.js"></script>
+	<script type="text/javascript" src="src/js/PlaneSection.js"></script>
+	<script type="text/javascript" src="src/js/tfcv_script.js"></script>
+	
+
+	</body>
+</html>

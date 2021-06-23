@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./dist/css/variables.css">
+	<link rel="stylesheet" type="text/css" href="./dist/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./dist/css/noscript.css">
+	<link rel="stylesheet" type="text/css" href="./dist/css/preload.css">
+	<link rel="stylesheet" type="text/css" href="./dist/css/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+		.loading1 { 
+			color:#6ead3a;
+			font-family: 'Roboto', sans-serif;
+			font-family: 'Roboto', sans-serif;
+			
+				flex-direction: column;
+
+			z-index: 100;
+
+			transition-delay: 3000ms;
+
+			opacity: 0px;	
+		}
+
+
+		
+		.end {
+			transition: 2s ease-in-out;
+
+			opacity: 0;
+		}
+
+		.start {
+			transition: 1s;
+			opacity: 1;
+		}
+
+		.end12 {
+			transition: 2s ease-in-out;
+
+			opacity: 0;
+		}
+
+		
+
+
+
+		.h1 {
+				font-size: 65pt;
+				margin-bottom:0;
+		}
+
+		.h2{
+			display: block; 
+			width: 1200px; 
+			font-size: 35pt;
+			margin-top:0;
+				color:#2D855F;
+
+				margin-bottom: 430px;
+		}
+
+		 .h3 {
+
+		 	font-size: 25pt;
+		 		color:#C26641;
+		 		text-align: center;
+		 		margin:0;
+		}
+
+		 .h4 {
+		 	font-size: 22pt;
+		 		color:#C26641;
+		 		margin:0;
+		}
+
+	 {
+			opacity: 0;
+		}
+		
+
+
+	</style>
+</head>
+<body>
+
+	<div  class="loading1 loading" ><div id ='lll' class="end" style="margin-top: -80px;">
+			<h1 class="h1">Фрактальные кривые</h1>
+			<h2 class="h2">Кривая Гильберта                            </h2>
+			
+			<h3 class="h3">Видео подготовлено для группы "Ёжик в матане"</h3>
+			<h3 class="h3"><i>https://vk.com/mathhedgehog</i></h3>
+				<div style="display: flex; justify-content: space-between;">
+			<h4 class='h4' >Powered by <i>Grafar</i></h4>
+			<h4 class="h4">Made by <i>BMaks</i></h4s> 
+				</div></div>
+			
+		</div>
+	<div id = 'ddd' class="loading end" style="background-color: transparent;">
+		
+		
+			<div class="loading__image loading__image-1"></div>
+			<div class="loading__image loading__image-2"></div>
+			<div class="loading__image loading__image-3"></div>
+		
+	</div>
+	<script type="text/javascript">		
+			setTimeout(() => {lll.classList.add('start')},2000)
+
+			setTimeout(() => {lll.classList.add('end12')},9000)
+			setTimeout(() => {ddd.classList.add('start')},9000)
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+export const settings = {
+	name: 'simpleTest2',
+	grafarInfo:{
+		backgroundColor:'white',
+		path:'./dist/js/default.js'
+	},
+	controllers:{
+		count:3,
+		controllers: [{
+			direction:'column',
+			x:'center',
+			y:'top',
+			infoPortability:true,
+			content:[{
+				type:'controller',
+				inputType:'text',
+				height:50,
+				width:200,
+				label:'Этот текст должен быть достаточно большим! Необходимо вызвать перенос строки... <br> Кстати, сюда можно вставлять не только текст, это могут быть <i>Элементы форматирования</i> или даже картинки!'
+			},{
+				type:'controller',
+				inputType:'range',
+				height:50,
+				width:200,
+				label:'Этот текст должен быть достаточно большим! Необходимо вызвать перенос строки... <br> Кстати, сюда можно вставлять не только текст, это могут быть <i>Элементы форматирования</i> или даже картинки!'
+			}]
+		},{
+			direction:'column',
+			x:'right',
+			y:'center',
+			infoPortability:true,
+			content:[{
+				type:'controller',
+				inputType:'button',
+				height:50,
+				width:50,
+				label:'Этот текст должен быть достаточно большим! Необходимо вызвать перенос строки... <br> Кстати, сюда можно вставлять не только текст, это могут быть <i>Элементы форматирования</i> или даже картинки!'
+			},{
+				type:'controller',
+				inputType:'range',
+				height:200,
+				width:50,
+				label:'Этот текст должен быть достаточно большим! Необходимо вызвать перенос строки... <br> Кстати, сюда можно вставлять не только текст, это могут быть <i>Элементы форматирования</i> или даже картинки!'
+			}]
+		},{
+			direction:'column',
+			x:'left',
+			y:'center',
+			infoPortability:true,
+			content:[{
+				type:'controller',
+				inputType:'button',
+				height:50,
+				width:50,
+				label:'Этот текст должен быть достаточно большим! Необходимо вызвать перенос строки... <br> Кстати, сюда можно вставлять не только текст, это могут быть <i>Элементы форматирования</i> или даже картинки!'
+			},{
+				type:'controllerArea',
+				direction:'column',
+				content:[{
+					type:'controller',
+					height:50,
+					width:50	
+				},{
+					type:'controllerArea',
+					direction:'row',
+					content:[{
+						type:'controller',
+						height:50,
+						width:50	
+					},{
+						type:'controller',
+						height:50,
+						width:50
+					},{
+						type:'controller',
+						height:50,
+						width:50
+					},{
+						type:'controller',
+						height:50,
+						width:50
+					}] 
+				},{
+					type:'controller',
+					height:50,
+					width:50
+				},{
+					type:'controller',
+					inputType:'button',
+					height:50,
+					width:200,
+					content:'Нажми на меня!'
+				}] 
+			},{
+				type:'controllerArea',
+				direction:'row',
+				content:[{
+					type:'controller',
+					height:50,
+					width:50	
+				},{
+					type:'controller',
+					height:50,
+					width:50
+				},{
+					type:'controller',
+					height:50,
+					width:50
+				},{
+					type:'controller',
+					height:50,
+					width:50
+				}] 
+			}]
+		}]
+	}
+}
